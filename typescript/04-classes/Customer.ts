@@ -1,4 +1,4 @@
-class Customer
+export class Customer
 {
 
     constructor(private _firstName: string, private _lastName: string)
@@ -25,7 +25,3 @@ class Customer
         this._lastName = value;
     }
 }
-
-let myCustomer = new Customer("Martin", "Dixon");
-console.log(myCustomer.firstName);
-console.log(myCustomer.lastName);
