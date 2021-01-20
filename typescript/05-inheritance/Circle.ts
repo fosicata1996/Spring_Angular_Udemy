@@ -21,6 +21,11 @@ export class Circle extends Shape
 
     getInfo(): string
     {
-        return super.getInfo() + `, radius = ${this._radius}`;
+        return `Circle --> ` + super.getInfo() + `, radius = ${this._radius}`;
+    }
+
+    calculateArea(): number
+    {
+        return Math.PI * Math.pow(this._radius, 2);
     }
 }
